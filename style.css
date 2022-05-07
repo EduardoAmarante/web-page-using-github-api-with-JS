@@ -2,6 +2,109 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    /* background-image: url(imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+
+    /* pode resumir o codigo acima com estas 2 linhas abaixo */
+    /* background: url(imgs/background.jpg) no-repeat center center fixed;
+    background-size: cover; */
+
+    background: linear-gradient(90deg, #ec2F4B, #009FFF);
+
 
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.103); */
+    /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); */
+    border-bottom: 5px ridge rgba(255, 197, 252, 0.164);
+}
+
+header #imgheader img {
+    width: 80px;
+    
+}
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color: violet; 
+}
+
+.container {
+    padding-left: 5vw;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#about p {
+    max-width: 600px;
+    
+}
+
+.form {
+    width: 40%;
+    padding: 20px 0;
+}
+
+.form input {
+    width: 50%;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    color: #FFF;
+    background-color: #009FFF;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-color: #56b418;
+}
