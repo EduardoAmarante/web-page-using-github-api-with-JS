@@ -26,6 +26,7 @@ body {
     background-size: cover; */
 
     background: linear-gradient(90deg, #ec2F4B, #009FFF);
+    
 
 
 }
@@ -38,10 +39,23 @@ header {
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.103); */
     /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); */
     border-bottom: 5px ridge rgba(255, 197, 252, 0.164);
+    margin-bottom: 40px;
+}
+header #imgheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #imgheader p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 header #imgheader img {
-    width: 80px;
+   width: 80px;
     
 }
 header ul {
@@ -63,10 +77,38 @@ header ul li a:hover{
 
 .container {
     padding-left: 5vw;
+    
+    
+}
+
+.container #arrow{
+    padding-left: 20vw;
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
 }
 
 .container .name h1 {
     font-size: 60px;
+    
 }
 
 .container .name h5 {
@@ -82,6 +124,7 @@ header ul li a:hover{
 .form {
     width: 40%;
     padding: 20px 0;
+    margin-top: 30px;
 }
 
 .form input {
@@ -90,6 +133,7 @@ header ul li a:hover{
     padding: 5px 10px;
     border: none;
     border-radius: 5px 0px 0px 5px;
+ 
 }
 
 .form button {
@@ -103,8 +147,34 @@ header ul li a:hover{
     transition: 500ms;
     border-radius: 0px 5px 5px 0px;
     margin-left: -5px;
+
 }
 
 .form button:hover {
     background-color: #56b418;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+        
+    }
+
+    .container .name h5{
+        font-size: 20px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+
 }

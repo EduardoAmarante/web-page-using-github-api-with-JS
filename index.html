@@ -19,6 +19,7 @@
     <header>
         <div id="imgheader">
             <img src="./imgs/logo.svg" alt="Logo">
+            <p>"Hello World!"</p>
         </div>
         <ul>
             <li>
@@ -38,10 +39,10 @@
                 <h1>Eduardo Amarante</h1>
                 <h5>Front-End Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-angle-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla saepe beatae illum magni! Pariatur
                     repudiandae numquam quas natus tempora eum labore culpa, saepe quisquam dolores consequuntur vel
@@ -59,6 +60,15 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
