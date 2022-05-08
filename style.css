@@ -32,32 +32,24 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
+
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.103); */
     /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); */
     border-bottom: 5px ridge rgba(255, 197, 252, 0.164);
     margin-bottom: 40px;
 }
-header #imgheader {
+
+header #itemsCabecalho {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    margin: 0 40px 0 40px;
 }
-
-header #imgheader p {
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: lighter;
-    font-style: italic;
-}
-
 header #imgheader img {
-   width: 80px;
-    
+   width: 56px;  
 }
+
 header ul {
     display: flex;
 }
@@ -133,7 +125,7 @@ header ul li a:hover{
     padding: 5px 10px;
     border: none;
     border-radius: 5px 0px 0px 5px;
- 
+    outline: none;
 }
 
 .form button {

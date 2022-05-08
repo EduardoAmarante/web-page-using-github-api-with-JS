@@ -9,7 +9,8 @@
         integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Eduardo Amarante</title>
@@ -17,21 +18,22 @@
 
 <body>
     <header>
-        <div id="imgheader">
-            <img src="./imgs/logo.svg" alt="Logo">
-            <p>"Hello World!"</p>
+        <div id="itemsCabecalho">
+            <div id="imgheader">
+                <img src="./imgs/logo.svg" alt="Logo">
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/eduardoamarante">Github</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://linkedin.com/eduardoamarante">Linkedin</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:eamarante80@gmail.com">Email</a>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li>
-                <a target="_blank" href="https://github.com/eduardoamarante">Github</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://linkedin.com/eduardoamarante">Linkedin</a>
-            </li>
-            <li>
-                <a target="_blank" href="mailto:eamarante80@gmail.com">Email</a>
-            </li>
-        </ul>
     </header>
     <main>
         <section class="container">
@@ -62,7 +64,7 @@
     </main>
 
     <script>
-        function displayAbout(){
+        function displayAbout() {
             var arrow = document.getElementById("animation");
             arrow.classList.toggle("rotate");
             var display = document.getElementById("about");
