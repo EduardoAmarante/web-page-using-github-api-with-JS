@@ -25,8 +25,8 @@ body {
     /* background: url(imgs/background.jpg) no-repeat center center fixed;
     background-size: cover; */
 
-    background: linear-gradient(90deg, #ec2F4B, #009FFF);
-    
+    /* background: linear-gradient(90deg, #ec2F4B, #009FFF); */
+    background: linear-gradient(90deg, #780206, #061161);
 
 
 }
