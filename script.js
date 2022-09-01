@@ -26,7 +26,7 @@ function getGitHubProfileInfos(){
         
         repos.innerHTML += `
         <li>
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=eduardoamarante&repo=${element.name}&theme=prussian&border_radius=0&hide_border=true"</img>
+        <a target="_blank" href="https://github.com/${element.full_name}"><img src="https://github-readme-stats.vercel.app/api/pin/?username=eduardoamarante&repo=${element.name}&theme=prussian&border_radius=0&hide_border=true"</img></a>
         </li>
         `
         });
