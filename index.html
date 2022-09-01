@@ -20,14 +20,14 @@
     <header>
         <div id="itemsCabecalho">
             <div id="imgheader">
-                <img src="./imgs/logo.svg" alt="Logo">
+                <img id="userPhoto" src="" alt="userPhoto">
             </div>
             <ul>
                 <li>
                     <a target="_blank" href="https://github.com/eduardoamarante">Github</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://linkedin.com/eduardoamarante">Linkedin</a>
+                    <a target="_blank" href="https://linkedin.com/in/eduardoamarante">Linkedin</a>
                 </li>
                 <li>
                     <a target="_blank" href="mailto:eamarante80@gmail.com">Email</a>
@@ -39,36 +39,26 @@
         <section class="container">
             <div class="name">
                 <h1>Eduardo Amarante</h1>
-                <h5>Full Stack Developer</h5>
             </div>
-            <!-- <div onclick="displayAbout()" id="arrow">
-                <i id="animation" class="fa-solid fa-angle-down"></i>
-            </div> -->
+            
             <div style="display: block;" id="about">
-                <p id="userBio">
-                    
-                </p>
+                <p id="userBio"></p><br>
             </div>
-            <!-- <div class="form">
-                <div>
-                    <p>Deixe seu contato!</p>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Seu melhor email:">
-                    <button>Enviar!</button>
-                </form>
-            </div> -->
+            
+            <div class="status">
+                <img class="img_status" src="https://github-readme-stats.vercel.app/api?username=EduardoAmarante&show_icons=true&theme=prussian&include_all_commits=true&count_private=true"/>
+
+                <div id="espaco"></div>
+
+                <img class="img_status" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EduardoAmarante&layout=compact&langs_count=16&theme=prussian&include_all_commits=true&count_private=true"/>
+              </div>
         </section>
+        
+        <aside>
+            <ul class="repos"></ul>
+        </aside>
     </main>
 
-    <script>
-        function displayAbout() {
-            var arrow = document.getElementById("animation");
-            arrow.classList.toggle("rotate");
-            var display = document.getElementById("about");
-            display.classList.toggle("active");
-        }
-    </script>
 </body>
 
 </html>

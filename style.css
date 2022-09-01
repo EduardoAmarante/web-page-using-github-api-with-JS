@@ -1,41 +1,22 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
 body {
-    /* background-image: url(imgs/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center fixed; */
-
-    /* pode resumir o codigo acima com estas 2 linhas abaixo */
-    /* background: url(imgs/background.jpg) no-repeat center center fixed;
-    background-size: cover; */
-
-    /* background: linear-gradient(90deg, #ec2F4B, #009FFF); */
-    background: linear-gradient(90deg, #780206, #061161);
-
-
+    background: #172F45;
+    
 }
 
 header {
-
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.103); */
-    /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5); */
-    border-bottom: 5px ridge rgba(255, 197, 252, 0.164);
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: #A0C1DF;
+    background-color: #5eaaf1;
     margin-bottom: 40px;
 }
 
@@ -52,11 +33,11 @@ header #imgheader img {
 
 header ul {
     display: flex;
+    list-style: none;
 }
 
 header ul li {
-    padding: 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    padding-right: 10px;
 }
 
 header ul li a{
@@ -67,107 +48,57 @@ header ul li a:hover{
     color: violet; 
 }
 
-.container {
-    padding-left: 5vw;
+main{
+    display: flex;
+    position: relative;
+    padding-left: 6vw;
+    top: 20vh;
+    z-index: 0;
+}
+
+#userPhoto{
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+main .status{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     
-    
 }
 
-.container #arrow{
-    padding-left: 20vw;
-    font-size: 40px;
-    cursor: pointer;
-    animation: blink 1s steps(5, start) infinite;
+main .status .img_status{
+    height: 20vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(104, 218, 253, 0.1);
 }
 
-@keyframes blink{
-    to {
-        visibility: hidden;
-    }
+main .status #espaco{
+    padding: 0 10px 0 10px;
 }
 
-#animation {
-    transition: 300ms;
-}
-.rotate {
-    transform: rotate(180deg);
-    transition: 300ms;
+section{
+    width: 70vw;
 }
 
-.active {
-    display: block !important;
+aside{
+    height: 80vh;
+    width: 40vw;
+    overflow-y: scroll;
 }
 
+aside ul li img{
+    padding: 5px;
+}
+
+aside ul li img:hover{
+    border: 5px solid #5eaaf1;
+    border-radius: 8px;
+    transition-duration: 0.6s;
+}
 .container .name h1 {
     font-size: 60px;
     
-}
-
-.container .name h5 {
-    font-size: 30px;
-    font-weight: lighter;
-}
-
-#about p {
-    max-width: 600px;
-    padding: 30px 0 0 0;
-    
-}
-
-.form {
-    width: 40%;
-    padding: 20px 0;
-    margin-top: 30px;
-}
-
-.form input {
-    width: 50%;
-    color: black;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px 0px 0px 5px;
-    outline: none;
-}
-
-.form button {
-    width: 15%;
-    color: #FFF;
-    background-color: #009FFF;
-    border: none;
-    padding: 5px 10px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: 500ms;
-    border-radius: 0px 5px 5px 0px;
-    margin-left: -5px;
-
-}
-
-.form button:hover {
-    background-color: #56b418;
-}
-
-@media only screen and (max-width: 768px) {
-    .form {
-        width: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 480px) {
-    .container .name h1 {
-        font-size: 30px;
-        
-    }
-
-    .container .name h5{
-        font-size: 20px;
-    }
-
-    #about p {
-        max-width: 80%;
-        text-align: justify;
-    }
-
-
 }
