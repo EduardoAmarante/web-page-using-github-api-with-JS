@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-    <title>Eduardo Amarante</title>
+    
+    <title>GitHub Visualizer</title>
 </head>
 
 <body>
@@ -21,6 +21,10 @@
         <div id="itemsCabecalho">
             <div id="imgheader">
                 <img id="userPhoto" src="" alt="userPhoto">
+            </div>
+            <div class="searchDiv">
+                <input class="search" value='eduardoamarante' id="searchInput" type="text" placeholder="your github user" >
+                <input class="search" id="searchBtn" type="submit" value="buscar" onclick="getGitHubProfileInfos()">
             </div>
             <ul>
                 <li>
@@ -38,7 +42,7 @@
     <main>
         <section class="container">
             <div class="name">
-                <h1>Eduardo Amarante</h1>
+                <h1 id="userName"></h1>
             </div>
             
             <div style="display: block;" id="about">
@@ -46,12 +50,8 @@
             </div>
             
             <div class="status">
-                <img class="img_status" src="https://github-readme-stats.vercel.app/api?username=EduardoAmarante&show_icons=true&theme=prussian&include_all_commits=true&count_private=true"/>
-
-                <div id="espaco"></div>
-
-                <img class="img_status" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EduardoAmarante&layout=compact&langs_count=16&theme=prussian&include_all_commits=true&count_private=true"/>
-              </div>
+                
+            </div>
         </section>
         
         <aside>
@@ -60,5 +60,5 @@
     </main>
 
 </body>
-
+<script src="./script.js"></script>
 </html>

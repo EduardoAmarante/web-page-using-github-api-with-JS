@@ -27,8 +27,40 @@ header #itemsCabecalho {
     padding: 10px;
     margin: 0 40px 0 40px;
 }
+
+header .searchDiv{
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    height: 30px;
+}
+header #searchInput{
+    text-align: center;
+    border: none;
+    color: black;
+    
+}
+input:focus {
+    outline:none;
+}
+header #searchBtn{
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    background-color: rebeccapurple;
+    border: none;
+}
+header #searchBtn:hover{
+    transition: 300ms;
+
+    background-color: orange;
+}
+
+
 header #imgheader img {
-   width: 56px;  
+   width: 56px;
+   height: 56px;  
+  
 }
 
 header ul {
