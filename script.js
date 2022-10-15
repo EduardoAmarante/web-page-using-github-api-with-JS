@@ -20,7 +20,7 @@ function getGitHubProfileInfos(){
 
         <div id="espaco"></div>
 
-        <img class="img_status" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${user}&layout=compact&langs_count=16&theme=prussian&include_all_commits=true&count_private=true"/>
+        <img class="img_status" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${user}&layout=compact&langs_count=6&theme=prussian&include_all_commits=true&count_private=true"/>
         `
   }
   

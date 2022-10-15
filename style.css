@@ -31,13 +31,15 @@ header #itemsCabecalho {
 header .searchDiv{
     display: flex;
     box-sizing: border-box;
-    border: none;
     height: 30px;
 }
+
 header #searchInput{
     text-align: center;
     border: none;
     color: black;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     
 }
 input:focus {
@@ -49,6 +51,8 @@ header #searchBtn{
     width: 100px;
     background-color: rebeccapurple;
     border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 header #searchBtn:hover{
     transition: 300ms;
@@ -66,14 +70,19 @@ header #imgheader img {
 header ul {
     display: flex;
     list-style: none;
+    
 }
 
 header ul li {
     padding-right: 10px;
+    
+    
 }
 
 header ul li a{
     transition: 300ms;
+    text-decoration: none;
+    
 }
 
 header ul li a:hover{
@@ -103,7 +112,7 @@ main .status{
 }
 
 main .status .img_status{
-    height: 20vh;
+    height: 25vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
     -5px -5px 10px rgba(104, 218, 253, 0.1);
 }
